@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "mind2_web",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
