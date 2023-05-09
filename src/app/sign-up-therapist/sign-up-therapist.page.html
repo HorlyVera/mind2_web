@@ -1,0 +1,175 @@
+<ion-content>
+
+  <div class="backgroundIniciarSesion">
+  </div>
+  <div class="fondoIniciarSesion">
+  </div>
+  <div class="seccionAzul" style="color: primary;"></div>
+  <ion-img src="assets/logo_white.png"></ion-img>
+  <div class="contenido">
+  
+  <ion-item color="none" lines="none">
+    <ion-text color="light">
+      <h1>Crear una cuenta</h1>
+    </ion-text>
+  </ion-item>
+  <hr>
+
+  <form>
+    <div class="caja">
+    
+    <ion-item color="none" lines="inset">
+      <ion-text color="light">
+        <h4>Datos personales</h4>
+      </ion-text>
+    </ion-item>
+    <ion-item color="none" lines="inset">
+      <ion-label position="stacked"
+                 color="light">Nombre</ion-label>
+      <ion-input color="light"></ion-input>
+    </ion-item>
+    <ion-item color="none" lines="inset">
+      <ion-label position="stacked"
+                 color="light">Apellido</ion-label>
+      <ion-input color="light"></ion-input>
+    </ion-item>
+    <ion-item color="none" id="open-modal">
+      <ion-label color="light">Fecha de nacimiento</ion-label>
+      <ion-note slot="end">{{dateExample | date}}</ion-note>
+    </ion-item>
+    <ion-modal trigger="open-modal" [cssClass]="'center'">
+      <ng-template>
+        <ion-datetime
+          presentation="date"
+          [(ngModel)]="dateExample"
+          size="cover"
+          [showDefaultButtons]="true"
+        ></ion-datetime>
+      </ng-template>
+    </ion-modal>
+    <ion-item color="none" lines="inset">
+      <ion-label color="light">Pais</ion-label>
+      <ion-select 
+                  okText="Aceptar"
+                  cancelText="Cancelar">
+        <!-- México, Colombia, Ecuador, Chile, Perú, Argentina -->
+        <ion-select-option></ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item color="none" lines="inset">
+      <ion-label color="light">Estado</ion-label>
+      <ion-select okText="Aceptar"
+                  cancelText="Cancelar">
+        <ion-select-option></ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item color="none" lines="inset">
+      <ion-label position="stacked"
+                 color="light">Celular</ion-label>
+      <ion-input color="light"
+                 type="tel"></ion-input>
+    </ion-item>
+    <ion-item class="ion-padding-horizontal errorDescription" color="none" lines="inset" >
+      <ion-label color="light" class="ion-text-wrap">
+        Ingresa los 10 digitos de tu teléfono celular.
+      </ion-label>
+    </ion-item>
+    <ion-item color="none" lines="inset">
+      <ion-label position="stacked"
+                 color="light">Dirección (calle y número)</ion-label>
+      <ion-input color="light"></ion-input>
+    </ion-item>
+    <ion-item color="none" lines="inset">
+      <ion-label position="stacked"
+                 color="light">Código Postal</ion-label>
+      <ion-input color="light"
+                 type="number"></ion-input>
+    </ion-item>
+    <br>
+
+    <ion-item color="none" lines="none">
+      <ion-label color="light">Acepto los Términos y Condiciones</ion-label>
+      <ion-checkbox slot="start"></ion-checkbox>
+    </ion-item>
+    <ion-item color="none" lines="none">
+      <a style="margin: auto; margin-top: 0; background-color: #4d1c6b; padding: 3px 10px; color: white;">Leer Términos y Condiciones</a>
+    </ion-item>
+  </div>
+
+  <div class="caja">
+    <ion-item color="none" lines="inset">
+      <ion-text color="light">
+        <h4>Datos profesionales</h4>
+      </ion-text>
+    </ion-item>
+    <ion-item color="none" lines="inset">
+      <ion-label position="stacked"
+                 color="light">Cédula profesional</ion-label>
+      <ion-input color="light"></ion-input>
+    </ion-item>
+    <ion-item color="none" lines="inset">
+      <ion-label color="light">Especialidades</ion-label>
+      <ion-select 
+                  okText="Aceptar"
+                  cancelText="Cancelar"
+                  multiple>
+        <ion-select-option></ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item color="none" lines="inset">
+      <ion-label color="light">Años dando terapia</ion-label>
+      <ion-select 
+                  okText="Aceptar"
+                  cancelText="Cancelar">
+        <ion-select-option></ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item color="none" lines="inset">
+      <ion-label color="light">Años dando supervisión</ion-label>
+      <ion-select 
+                  okText="Aceptar"
+                  cancelText="Cancelar">
+        <ion-select-option></ion-select-option>
+      </ion-select>
+    </ion-item>
+    <br>
+    <ion-item color="none" lines="inset">
+      <ion-text color="light">
+        <h4>Accesos</h4>
+      </ion-text>
+    </ion-item>
+    <ion-item color="none" lines="inset">
+      <ion-label position="stacked"
+                 color="light">Email</ion-label>
+      <ion-input color="light"
+                 type="email"></ion-input>
+    </ion-item>
+    <ion-item color="none" lines="inset">
+      <ion-label position="stacked"
+                 color="light">Contraseña</ion-label>
+      <ion-input color="light"
+                 type="password"></ion-input>
+    </ion-item>
+    <br><br>
+    <ion-item color="none" lines="none">
+      <ion-text color="light">
+        Para empezar a usar Mind<sup>2</sup>, confirma tu cuenta en el mail que registraste.
+      </ion-text>
+    </ion-item>
+ 
+  </div>
+</form>
+</div>
+<div class="botonRegistrarse">
+    <ion-button 
+                expand="full"
+                size="large"
+                shape="round"
+                type="submit">
+      Registrarme
+    </ion-button>
+</div>
+
+
+
+</ion-content>

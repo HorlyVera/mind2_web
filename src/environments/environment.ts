@@ -3,7 +3,11 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+//   API_BASE_URL: 'https://api.mind2.me',
+  API_BASE_URL: 'https://uat.api.mind2.me',
+  SR_PAGO_PUBLIC_KEY: 'pk_dev_5ed52ab0e1fd6ViMPW',
+  STRIPE_PUBLIC_KEY: 'pk_test_51HjWebJOUNS8J4a9acZk9uvKlH5Eji4i7mpbhciTvVPwPVc2pgdRoalDUBbLBJVH2ouXG2tjFxsUR0GK27XkhyVR00178ig3Vh'
 };
 
 /*
