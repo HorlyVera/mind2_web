@@ -1,0 +1,53 @@
+@media (max-width:520px){
+    h1{
+        color: #fff;
+        font-weight: bold;
+        font-size: 2em;
+    }
+
+    ion-img{
+        max-width: 150px;
+        max-height: 150px;
+        position: absolute;
+        z-index: 2;
+        top: 5%;
+        right: 5%;
+    }
+    }  
+        
+    .contenido{
+        text-align: center;
+        position: absolute;
+        z-index: 2;
+        width: 300px;
+        top: 15%;
+        left: 12%;
+    }
+    
+
+@media (min-width:520px){
+    h1{
+        color: #fff;
+        font-weight: bold;
+        font-size: 2.9em;
+    }
+
+    ion-img{
+        max-width: 150px;
+        max-height: 150px;
+        position: absolute;
+        z-index: 2;
+        top: 5%;
+        right: 5%;
+    }
+
+    .contenido{
+        text-align: center;
+        position: absolute;
+        z-index: 2;
+        width: 400px;
+        top: 15%;
+        left: 12%;
+    }
+
+    }

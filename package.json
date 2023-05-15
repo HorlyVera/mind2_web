@@ -31,6 +31,7 @@
     "@ionic/storage": "^3.0.6",
     "ionicons": "^7.0.0",
     "rxjs": "~7.5.0",
+    "swiper": "^9.3.1",
     "tslib": "^2.3.0",
     "twilio-chat": "^6.0.0",
     "twilio-video": "^2.27.0",
