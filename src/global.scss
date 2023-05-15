@@ -25,3 +25,51 @@
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
 
+@import "./app/app.component.scss";
+
+:root {
+	--ion-color-purple: #581973;
+	--ion-color-purple-rgb: 88,25,115;
+	--ion-color-purple-contrast: #ffffff;
+	--ion-color-purple-contrast-rgb: 255,255,255;
+	--ion-color-purple-shade: #4d1665;
+	--ion-color-purple-tint: #693081;
+  
+
+	--ion-color-step-50: #f9f6fb;
+	--ion-color-step-100: #f4eef6;
+	--ion-color-step-150: #eee5f2;
+	--ion-color-step-200: #e8dced;
+	--ion-color-step-250: #e3d3e9;
+	--ion-color-step-300: #ddcbe5;
+	--ion-color-step-350: #d7c2e0;
+	--ion-color-step-400: #d1b9dc;
+	--ion-color-step-450: #ccb0d7;
+	--ion-color-step-500: #c6a8d3;
+	--ion-color-step-550: #c09fcf;
+	--ion-color-step-600: #bb96ca;
+	--ion-color-step-650: #b58dc6;
+	--ion-color-step-700: #af85c1;
+	--ion-color-step-750: #aa7cbd;
+	--ion-color-step-800: #a473b9;
+	--ion-color-step-850: #9e6ab4;
+	--ion-color-step-900: #9862b0;
+	--ion-color-step-950: #9359ab;
+  }
+  
+  .ion-color-purple {
+    --ion-color-base: var(--ion-color-purple);
+	--ion-color-base-rgb: var(--ion-color-purple-rgb);
+	--ion-color-contrast: var(--ion-color-purple-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-purple-contrast-rgb);
+	--ion-color-shade: var(--ion-color-purple-shade);
+	--ion-color-tint: var(--ion-color-purple-tint);
+  }
+  
+  ion-datetime {
+    --ion-background-color: #ffffff;
+	--ion-background-color-rgb: 255,255,255;
+  
+    border-radius: 16px;
+    box-shadow: rgba(var(--ion-color-purple-rgb), 0.3) 0px 10px 15px -3px;
+  }

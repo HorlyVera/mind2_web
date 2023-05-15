@@ -1,0 +1,91 @@
+
+ion-card{
+  background-color: #fff;
+  padding: 15px;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: -14px 14px 44px 2px rgba(174,174,174,0.75);
+  -webkit-box-shadow: -14px 14px 44px 2px rgba(174,174,174,0.75);
+  -moz-box-shadow: -14px 14px 44px 2px rgba(174,174,174,0.75);
+}
+
+ion-grid{
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+ion-col{
+  text-align: center;
+}
+
+ion-icon{
+  font-size: 64px;
+  color: #815295;
+}
+
+.btn{
+  color: linear-gradient(
+  325deg,
+  hsl(274deg 80% 75%) 0%,
+  hsl(275deg 67% 71%) 11%,
+  hsl(276deg 58% 68%) 22%,
+  hsl(277deg 50% 65%) 33%,
+  hsl(277deg 44% 61%) 44%,
+  hsl(278deg 38% 58%) 56%,
+  hsl(279deg 34% 55%) 67%,
+  hsl(280deg 30% 52%) 78%,
+  hsl(281deg 29% 48%) 89%,
+  hsl(282deg 29% 45%) 100%
+);
+}
+
+h1{
+  color: #3D003E;
+  font-weight: bold;
+ 
+}
+
+h2{
+  color: #3D003E;
+}
+
+h3{
+  color: #3D003E;
+
+}
+h6{
+  color: #3D003E;
+  font-weight:100;
+}
+
+#titulo{
+  letter-spacing: .3rem;
+  font-size: 2rem;
+}
+
+.background{
+  border: none;
+  width: 100%;
+  height: 78%;
+  z-index: 1;
+  background: rgb(137,204,180);
+  background: linear-gradient(342deg, rgba(137,204,180,1) 0%, rgba(255,255,255,1) 50%, rgba(223,199,242,1) 100%);
+}
+
+.contenido{
+  z-index: 2;
+  text-align: center;
+  padding-top: 5%;
+}
+
+
+.columna-1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.piePagina{
+  background-color: #7EBFB9;
+  height: 45px;
+}

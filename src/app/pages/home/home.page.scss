@@ -1,0 +1,50 @@
+h1{
+  color: #581973;
+  font-weight: bold;
+  letter-spacing: .3rem;
+  font-size: 2rem;
+}
+h3{
+  font-weight: bold;
+}
+
+ion-col{
+  padding-left: 30px;
+  padding-right: 30px;
+
+  text-align: justify;
+}
+
+.titulos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 25%;
+
+}
+
+.caja{
+  display: flex;
+  justify-content: center;
+}
+
+.pasos{
+  background-color: #ddcbe5;
+  height: 47%;
+  padding-top: 5%;
+}
+
+.piePagina{
+  background-color: #7EBFB9;
+  height: 47px;
+}
+
+.icono{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #21A199;
+  position: relative;
+  bottom: 10px;
+}

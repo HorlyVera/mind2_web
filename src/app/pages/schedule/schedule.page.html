@@ -1,0 +1,54 @@
+<ion-content >
+  <ion-navigation-menu></ion-navigation-menu>
+  <div class="calendario">
+    <h1>Nueva Cita</h1>
+    <br>
+  <ion-datetime [showDefaultTitle]="true" color="purple" presentation="date" [multiple]="true">
+    <span slot="title">Horarios disponibles de</span>
+  </ion-datetime>
+</div>
+<div class="titulo">
+  <ion-icon src="../../../assets/calendar-outline.svg" ></ion-icon>
+  <h1>Mis citas</h1>
+</div>
+<ion-grid>
+  <ion-row>
+    <ion-col class="columna-1" size-lg="4" size-md="6" size-sm="12" size-xs="12">
+      <ion-card>
+        <ion-card-title>
+          <h1 class="subtitulo">Hoy</h1>
+        </ion-card-title>
+        <ion-card-content>
+          <br>
+        <p>No hay citas</p>
+        <br>
+      </ion-card-content>
+        </ion-card>
+    </ion-col>
+        <ion-col class="columna-1" size-lg="4" size-md="6" size-sm="12" size-xs="12">
+          <ion-card>
+            <ion-card-title>
+              <h1 class="subtitulo">Próximas</h1>
+            </ion-card-title>
+            <ion-card-content>
+              <br>
+            <p>No hay citas</p>
+            <br>
+          </ion-card-content>
+            </ion-card>
+        </ion-col>
+    <ion-col class="columna-1" size-lg="4" size-md="6" size-sm="12" size-xs="12">
+      <ion-card>
+        <ion-card-title>
+          <h1 class="subtitulo">Pasadas</h1>
+        </ion-card-title>
+        <ion-card-content>
+          <br>
+        <p>No hay citas</p>
+        <br>
+      </ion-card-content>
+        </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+</ion-content>

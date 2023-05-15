@@ -1,0 +1,99 @@
+<ion-content>
+  <ion-navigation-menu></ion-navigation-menu>
+  <div class="background">
+    <div class="contenido">
+    <ion-item color="none" lines="none">
+      <ion-text color="light">
+        <h1>Mi cuenta</h1>
+      </ion-text>
+    </ion-item>
+    <br>
+    <form >
+      <ion-item color="none" lines="inset">
+        <ion-label class="texto" position="stacked">Nombre</ion-label>
+        <ion-input color="light"
+                  ></ion-input>
+      </ion-item>
+      <ion-item color="none">
+        <ion-label class="texto" position="stacked"
+                   >Apellido</ion-label>
+        <ion-input color="light"
+                   ></ion-input>
+      </ion-item>
+  
+        <ion-item color="none" id="open-modal">
+          <ion-label class="texto">Fecha de nacimiento</ion-label>
+          <ion-note slot="end">{{dateExample | date}}</ion-note>
+        </ion-item>
+        <ion-modal trigger="open-modal" [cssClass]="'center'">
+          <ng-template>
+            <ion-datetime
+              presentation="date"
+              [(ngModel)]="dateExample"
+              size="cover"
+              [showDefaultButtons]="true"
+            ></ion-datetime>
+          </ng-template>
+        </ion-modal>
+  
+      <ion-item color="none">
+        <ion-label class="texto" >Pais</ion-label>
+        <ion-select 
+                    okText="Aceptar"
+                    cancelText="Cancelar">
+          <!-- México, Colombia, Ecuador, Chile, Perú, Argentina -->
+          <ion-select-option></ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item color="none">
+        <ion-label class="texto">Estado</ion-label>
+        <ion-select 
+                    okText="Aceptar"
+                    cancelText="Cancelar">
+          <ion-select-option></ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item color="none">
+        <ion-label class="texto" position="stacked"
+                  >Email</ion-label>
+        <ion-input color="light"
+                   type="email"
+                   ></ion-input>
+      </ion-item>
+      <ion-item color="none">
+        <ion-label class="texto" position="stacked"
+                   >Celular</ion-label>
+        <ion-input color="light"
+                   type="tel"
+                   ></ion-input>
+      </ion-item>
+      
+      <ion-item color="none">
+        <ion-label class="texto" position="stacked"
+                   >Contraseña</ion-label>
+        <ion-input color="light"
+                   type="password"
+                   ></ion-input>
+      </ion-item>
+      
+      <ion-item color="none">
+        <ion-label class="texto" position="stacked"
+                   >Eliminar cuenta</ion-label>
+        <ion-input color="light"
+                   ></ion-input>
+      </ion-item>
+      <br><br>
+      
+    </form>
+  </div>
+  <div class="botonRegistrarse">
+  <ion-button 
+                  expand="full"
+                  size="large"
+                  shape="round"
+                  type="submit">
+        Guardar
+      </ion-button>
+  </div>
+</div>
+</ion-content>
